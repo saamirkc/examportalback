@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;background: azure }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.text-center{
+    text-align: center;
+
+}
+.ml-20{
+  margin-left: 20px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+
+.ml-40{
+  margin-left: 40px;
+}
+
+.mr-40{
+  margin-right: 40px;
+}
+.ml-300{
+  margin-left: 300px;
+}
+.ml-350{
+  margin-left: 350px;
+}
+.icon-class {
+  font-size: 27px; /* Adjust the size as needed */
+}
+
+

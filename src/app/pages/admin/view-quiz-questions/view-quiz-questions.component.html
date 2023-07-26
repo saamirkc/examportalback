@@ -1,0 +1,47 @@
+<h1 class="mt-20">Questions of {{title}}</h1>
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container text-center">
+          <button  mat-raised-button color="accent"[routerLink]="'/admin/add-question/'+qid+'/'+title" >Add Question</button>
+        </div>
+        <mat-card  *ngFor="let q of questions ;let i=index "class="mt-20">
+          <mat-card-content>
+<p>
+  <b>Q{{i+1}})</b> <span class="ml-20"[innerHTML]="q.content" ></span>
+</p>
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-md-6">
+               <p><b>1)</b> {{q.option1}}
+               </p>
+             </div>
+             <div class="col-md-6">
+               <p><b>2)</b> {{q.option2}}
+               </p>
+             </div>
+             <div class="col-md-6">
+               <p><b>3)</b> {{q.option3}}
+               </p>
+             </div>
+             <div class="col-md-6">
+               <p><b>4)</b> {{q.option4}}
+               </p>
+             </div>
+             </div>
+           </div>
+            <mat-divider></mat-divider>
+            <p><b>Correct Answer :</b> {{q.answer}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="accent" (click)="deleteQuestion(q.quesId)">Delete</button>
+          </mat-card-actions>
+<!--<div class="container text-center">-->
+<!--  <button  mat-raised-button color="accent"[routerLink]="'/admin/add-question/'+qid+'/'+title" >Add Question</button>-->
+<!--</div>-->
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
