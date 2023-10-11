@@ -38,6 +38,11 @@ import { AddQuestionComponent } from './pages/admin/add-question/add-question.co
 import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
 import { SidebarUserComponent } from './pages/user/sidebar-user/sidebar-user.component';
 import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
+import { InstructionsComponent } from './pages/user/instructions/instructions.component';
+import { StartComponent } from './pages/user/start/start.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {NgxUiLoaderHttpModule, NgxUiLoaderModule} from "ngx-ui-loader";
+
 
 
 
@@ -63,6 +68,8 @@ import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
     AddQuestionComponent,
     SidebarUserComponent,
     LoadQuizComponent,
+    InstructionsComponent,
+    StartComponent,
 
 
   ],
@@ -85,6 +92,11 @@ import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
     MatSlideToggleModule,
     MatSelectModule,
     CKEditorModule,
+    MatProgressSpinnerModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground:true,
+    }),
 
 
 
